@@ -1,7 +1,7 @@
 MAX_STATES = 20
 
 # --------------------------------------------------
-# Task 1: Read NFA
+# Read NFA
 def read_nfa():
     n_states = int(input("Enter number of states: "))
     n_symbols = int(input("Enter number of symbols: "))
@@ -11,7 +11,7 @@ def read_nfa():
     transitions = {i: {s: set() for s in symbols} for i in range(n_states)}
     eps = {i: set() for i in range(n_states)}
 
-    print("Enter transitions (state symbol state), use e for epsilon (-1 to stop):")
+    print("Enter transitions (state symbol state) and use e for epsilon (-1 to stop):")
     while True:
         data = input().split()
         if data[0] == '-1':
@@ -34,7 +34,7 @@ def read_nfa():
 
 
 # --------------------------------------------------
-# Task 2: Compute epsilon-closure
+# Compute epsilon-closure
 def epsilon_closure(state, eps):
     stack = [state]
     closure = {state}
@@ -54,7 +54,7 @@ def compute_all_eclosures(n_states, eps):
 
 
 # --------------------------------------------------
-# Task 3 & 4: New transitions and new final states
+#  New transitions and new final states
 def remove_epsilon(n_states, symbols, transitions, eps, final_states):
     eclosures = compute_all_eclosures(n_states, eps)
 
@@ -78,7 +78,7 @@ def remove_epsilon(n_states, symbols, transitions, eps, final_states):
 
 
 # --------------------------------------------------
-# Task 5: Display new automaton
+#  Display new automaton
 def display_nfa(symbols, transitions, final_states, eclosures):
     print("\nE-closures:")
     for state, clo in eclosures.items():
@@ -93,7 +93,7 @@ def display_nfa(symbols, transitions, final_states, eclosures):
 
 
 # --------------------------------------------------
-# Task 6: Display flattened transitions of new NFA
+#  Display flattened transitions of new NFA
 def display_flat_transitions(transitions, symbols):
     print("\nTransitions (flattened) without epsilon:")
     for state in transitions:
