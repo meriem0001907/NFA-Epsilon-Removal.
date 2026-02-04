@@ -1,11 +1,12 @@
 "# NFA-Epsilon-Removal." 
 🧪 Lab Report
 Eliminating ε-Transitions from a Non-Deterministic Finite Automaton (NFA)
-Student Name: …………………
-Module: Automata Theory / Formal Languages
+Student Name: ABOUD MERIEM ELBATOUL
+Major : security student
+Module:Compilation
 Lab: Eliminating ε-Transitions from an NFA
 Language Used: Python
-Academic Year: 2025–2026
+
 1. Introduction
 
 In automata theory, a Non-Deterministic Finite Automaton (NFA) is a finite automaton that may contain multiple transitions for the same input symbol and may also include ε (epsilon) transitions.
