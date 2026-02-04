@@ -1,4 +1,3 @@
-"# NFA-Epsilon-Removal." 
 🧪 Lab Report
 Eliminating ε-Transitions from a Non-Deterministic Finite Automaton (NFA)
 Student Name: ABOUD MERIEM ELBATOUL
