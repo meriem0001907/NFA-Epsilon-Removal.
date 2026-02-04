@@ -69,7 +69,7 @@ To eliminate ε-transitions from an NFA, the following steps are applied:
 
 2)-For every state s and input symbol 𝑎, compute new transitions:
 
-𝛿′(𝑠,𝑎)=⋃(𝑞∈𝜀-closure(𝑠))𝜀-closure(𝛿(𝑞,𝑎)
+𝛿′(𝑠,𝑎)=⋃(𝑞∈𝜀-closure(𝑠)) 𝜀-closure(𝛿(𝑞,𝑎)
 	​
 3)-Update final states:
 
